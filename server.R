@@ -15,6 +15,7 @@ library(ggplot2)
 ajustar_modelo <- function(y, x){
   form <- as.formula(paste(y, "~", paste(x, collapse = "+")))
   modelo <- lm(form, data = diamonds)
+  return(modelo)
 }
 
 
